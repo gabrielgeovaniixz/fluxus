@@ -1,0 +1,27 @@
+.painel {
+  flex: 1;
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+.conteudo {
+  padding: 20px;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .painel {
+    margin-left: 0;
+  }
+}

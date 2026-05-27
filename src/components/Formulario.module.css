@@ -1,0 +1,84 @@
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.campo input {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  outline: none;
+}
+
+.botoesTipo {
+  display: flex;
+  gap: 10px;
+  grid-column: span 2;
+}
+
+.botoesTipo button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  border-radius: 5px;
+}
+
+.ativoEntrada {
+  background-color: #dcfce7 !important;
+  border-color: #22c55e !important;
+  color: #15803d;
+}
+
+.ativoSaida {
+  background-color: #fee2e2 !important;
+  border-color: #ef4444 !important;
+  color: #b91c1c;
+}
+
+.btnSalvar {
+  grid-column: span 2;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .botoesTipo, .btnSalvar {
+    grid-column: span 1;
+  }
+}

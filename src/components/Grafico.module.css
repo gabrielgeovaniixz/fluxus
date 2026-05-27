@@ -1,0 +1,10 @@
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.container h3 {
+  margin-bottom: 10px;
+}

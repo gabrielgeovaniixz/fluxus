@@ -1,0 +1,28 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.subtitulo {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.titulo {
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usuario span {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
